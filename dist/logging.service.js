@@ -17,7 +17,7 @@ let IssueLoggingService = class IssueLoggingService {
         this.issueCreatorUrl = "http://localhost:3500";
     }
     log(log) {
-        this.http.post(`${this.issueCreatorUrl}`, log);
+        this.http.post(`${this.issueCreatorUrl}`, log).subscribe();
     }
 };
 IssueLoggingService = __decorate([
