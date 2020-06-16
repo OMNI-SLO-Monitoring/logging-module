@@ -9,7 +9,6 @@ export class IssueLoggingService {
     constructor(private http: HttpService) {}
 
     log(log: LogMessageFormat) {
-        console.log("Logging", log);
         this.http.post(`${this.issueCreatorUrl}/log-receiver`, log);
     }
 }

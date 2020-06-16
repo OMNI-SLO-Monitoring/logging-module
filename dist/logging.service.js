@@ -17,7 +17,6 @@ let IssueLoggingService = class IssueLoggingService {
         this.issueCreatorUrl = "http://localhost:3500";
     }
     log(log) {
-        console.log("Logging", log);
         this.http.post(`${this.issueCreatorUrl}/log-receiver`, log);
     }
 };
