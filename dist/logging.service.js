@@ -17,7 +17,7 @@ let IssueLoggingService = class IssueLoggingService {
         this.issueCreatorUrl = "http://localhost:3500";
     }
     log(log) {
-        this.http.post(`${this.issueCreatorUrl}`, log).subscribe();
+        this.http.post(`${this.issueCreatorUrl}`, JSON.parse(JSON.stringify(log))).subscribe(res => console.log("Log reported"), err => console.log("ERROR when reporting log"));
     }
 };
 IssueLoggingService = __decorate([

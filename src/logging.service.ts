@@ -9,6 +9,10 @@ export class IssueLoggingService {
     constructor(private http: HttpService) {}
 
     log(log: LogMessageFormat) {
-        this.http.post(`${this.issueCreatorUrl}`, log).subscribe();
+        this.http.post(`${this.issueCreatorUrl}`, JSON.parse(JSON.stringify(log))).subscribe(
+            res => console.log("Log reported"),
+            err => console.log("ERROR when reporting log")
+        );
     }
 }
+    
