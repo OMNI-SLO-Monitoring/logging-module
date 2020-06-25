@@ -1,6 +1,6 @@
 # Logging Module
 
-Provides a Nest Module that exports a Service used for logging. It sends logs to the IssueCreator.
+Provides a Nest Module that exports a Service used for logging. It sends logs to the [IssueCreator](https://github.com/ccims/issue-creator).
 
 ## Installation
 
