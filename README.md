@@ -29,11 +29,14 @@ Inject Service: `constructor(private logger: IssueLoggingService)`
 Create Logs:
 ```
     this.logger.log({
-        source: url,
-        target: null,
+        source: someUrl,
+        detector: someUrl,
         time: new Date().getTime(),
         type: LogType.CPU,
-        message: message
+        message: someMessage,
+        data: {
+          cpuUtilization: someNumber
+        },
     });
 ```
 
