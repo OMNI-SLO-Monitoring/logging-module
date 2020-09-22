@@ -33,8 +33,8 @@ Inject Service: `constructor(private logger: IssueLoggingService)`
 Create Logs:
 ```
     this.logger.log({
-        source: someUrl,
-        detector: someUrl,
+        sourceUrl: someUrl,
+        detectorUrl: someUrl,
         time: new Date().getTime(),
         type: LogType.CPU,
         message: someMessage,
