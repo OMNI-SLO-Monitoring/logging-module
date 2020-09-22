@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ccims/overview-and-documentation/c66a3c246886466653c8d7a09e8dd1cfd4dbc17d/app_logos/logo_final_6.25p.svg">
+</p>
+
 # Logging Module
 
 Provides a Nest Module that exports a Logging Service. It sends logs to the [IssueCreator](https://github.com/ccims/issue-creator).
